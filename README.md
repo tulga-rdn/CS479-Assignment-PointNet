@@ -190,7 +190,7 @@ While you are running `train_seg.py`, you are able to see progress bars:
 ![image](https://user-images.githubusercontent.com/37788686/158202971-159e4dc3-199a-4cf2-9b12-c01059a06a4c.png)
 
 ShapeNet part dataset will automatically be downloaded on `data` directory when `train_seg.py` is first executed. 
-If you encounter network issues while downloading the dataset, proceed to the link below for manual download [(ShapeNet manual download)](https://onedrive.live.com/?authkey=%21ALKmMDfOhwxH43k&id=0CE615B143FC4BDC%21188223&cid=0CE615B143FC4BDC&parId=root&parQt=sharedby&o=OneUp). After downloading, place the data in the `./data` directory.
+If you encounter network issues while downloading the dataset, proceed to the link below for manual download [(ShapeNet manual download)](https://onedrive.live.com/?authkey=%21ALKmMDfOhwxH43k&id=0CE615B143FC4BDC%21188223&cid=0CE615B143FC4BDC&parId=root&parQt=sharedby&o=OneUp). After downloading, unzip the file and rename the directory to `shapenet_part_seg_hdf5_data` [(check dataloder code here)](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/b43db76f1e739093afbb117e4528362d87df4180/pointnet/dataloaders/shapenet_partseg.py#L15). Then, place the data in the `./data` directory. 
 
 
 We provide the code to measure instance mIoU in `utils/metrics.py`.
