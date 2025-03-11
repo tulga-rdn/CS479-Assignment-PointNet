@@ -103,6 +103,10 @@ pointnet
     └── segmentation
 ```
 
+## Dataset
+The dataloader automatically downloads ModelNet and ShapeNet dataset, but if the link is not reachable, please proceed to the following link to download the datasets. 
+Proceed to the provided link for manual download [(link)](https://drive.google.com/drive/folders/1Ly2DbsBMBXp75CGCA4vnJ3uoyDxOJz84?usp=drive_link). After downloading, unzip the file and rename the directory to `modelnet40_ply_hdf5_2048` and `shapenet_part_seg_hdf5_data`, respectively (refer to [ModelNet dataloader](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/b43db76f1e739093afbb117e4528362d87df4180/pointnet/dataloaders/shapenet_partseg.py#L15) and [ShapeNet dataloader](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/c270e998b13fa8f05ede0560d4dfb28f220ea2b0/pointnet/dataloaders/modelnet.py#L15)). Then, place them in the `./data` directory. 
+
 
 ## Tasks
 
@@ -188,9 +192,6 @@ python train_seg.py --batch_size {batch_size you want} --lr {lr you want} --epoc
 While you are running `train_seg.py`, you are able to see progress bars:
 
 ![image](https://user-images.githubusercontent.com/37788686/158202971-159e4dc3-199a-4cf2-9b12-c01059a06a4c.png)
-
-ShapeNet part dataset will automatically be downloaded on `data` directory when `train_seg.py` is first executed. 
-If you encounter network issues while downloading the dataset, proceed to the link below for manual download [(ShapeNet manual download)](https://onedrive.live.com/?authkey=%21ALKmMDfOhwxH43k&id=0CE615B143FC4BDC%21188223&cid=0CE615B143FC4BDC&parId=root&parQt=sharedby&o=OneUp). After downloading, unzip the file and rename the directory to `shapenet_part_seg_hdf5_data` [(check dataloder code here)](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/b43db76f1e739093afbb117e4528362d87df4180/pointnet/dataloaders/shapenet_partseg.py#L15). Then, place the data in the `./data` directory. 
 
 
 We provide the code to measure instance mIoU in `utils/metrics.py`.
