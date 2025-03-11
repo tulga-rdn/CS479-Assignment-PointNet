@@ -242,10 +242,10 @@ On ModelNet40 test set:
 
 ## What to Submit
 
-Compile the following files as a **ZIP** file named `{NAME}_{STUDENT_ID}.zip` and submit the file via Gradescope.
+Compile the following files as a **ZIP** file named `{NAME}_{STUDENT_ID}.zip` and submit the file via KLMS.
 1. 4 codes that you implemented: `model.py, train_ae.py, train_cls.py, train_seg.py`;
 2. Model checkpoint file that achieves the best performance for classification, segmentation, and auto-encoding each;
-3. Screenshot at the end of the training for classification, segmentation, and auto-encoding each.
+3. A PDF file: {NAME}_{ID}.pdf that contains screenshot at the end of training for EACH TASK (classification, segmentation, and auto-encoding).
 
 Screenshot Example:
 
