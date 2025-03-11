@@ -103,9 +103,8 @@ pointnet
     └── segmentation
 ```
 
-## Dataset
-The dataloader automatically downloads ModelNet and ShapeNet dataset, but if the link is not reachable, please proceed to the following link to download the datasets. 
-Proceed to the provided link for manual download [(link)](https://drive.google.com/drive/folders/1Ly2DbsBMBXp75CGCA4vnJ3uoyDxOJz84?usp=drive_link). After downloading, unzip the file and rename the directory to `modelnet40_ply_hdf5_2048` and `shapenet_part_seg_hdf5_data`, respectively (refer to [ModelNet dataloader](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/b43db76f1e739093afbb117e4528362d87df4180/pointnet/dataloaders/shapenet_partseg.py#L15) and [ShapeNet dataloader](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/c270e998b13fa8f05ede0560d4dfb28f220ea2b0/pointnet/dataloaders/modelnet.py#L15)). Then, place them in the `./data` directory. 
+## Datasets
+The dataloader automatically downloads the ModelNet40 and ShapeNet datasets. If the link is not reachable, you can use the provided link for manual download [(link)](https://drive.google.com/drive/folders/1Ly2DbsBMBXp75CGCA4vnJ3uoyDxOJz84?usp=drive_link). After downloading, unzip the file and rename the directory to `modelnet40_ply_hdf5_2048` and `shapenet_part_seg_hdf5_data`, respectively (refer to [ModelNet dataloader](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/b43db76f1e739093afbb117e4528362d87df4180/pointnet/dataloaders/shapenet_partseg.py#L15) and [ShapeNet dataloader](https://github.com/KAIST-Visual-AI-Group/CS479-Assignment-PointNet/blob/c270e998b13fa8f05ede0560d4dfb28f220ea2b0/pointnet/dataloaders/modelnet.py#L15)). Then, place them in the `./data` directory. 
 
 
 ## Tasks
